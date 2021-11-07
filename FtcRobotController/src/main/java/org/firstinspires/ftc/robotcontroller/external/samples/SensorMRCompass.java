@@ -68,7 +68,7 @@ public class SensorMRCompass extends LinearOpMode {
         telemetry.log().add("");
         telemetry.log().add("To calibrate the compass once the opmode is");
         telemetry.log().add("started, make sure the compass is level, then");
-        telemetry.log().add("press 'A' on the gamepad. Next, slowly rotate the ");
+        telemetry.log().add("press 'A' on the org.ftc17191.ftclayer.gamepad. Next, slowly rotate the ");
         telemetry.log().add("compass in a full 360 degree circle while keeping");
         telemetry.log().add("it level. When complete, press 'B'.");
 

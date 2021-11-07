@@ -82,9 +82,9 @@ import java.util.Locale;
  *              slowly moving the device though various axes until it does."</ol>
  * </li>
  *
- * <p>To calibrate the IMU, run this sample opmode with a gamepad attached to the driver station.
+ * <p>To calibrate the IMU, run this sample opmode with a org.ftc17191.ftclayer.gamepad attached to the driver station.
  * Once the IMU has reached sufficient calibration as reported on telemetry, press the 'A'
- * button on the gamepad to write the calibration to a file. That file can then be indicated
+ * button on the org.ftc17191.ftclayer.gamepad to write the calibration to a file. That file can then be indicated
  * later when running an opmode which uses the IMU.</p>
  *
  * <p>Note: if your intended uses of the IMU do not include use of all its sensors (for exmaple,

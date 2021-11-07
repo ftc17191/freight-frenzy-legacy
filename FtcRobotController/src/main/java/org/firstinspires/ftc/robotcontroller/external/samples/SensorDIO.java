@@ -45,10 +45,10 @@ import com.qualcomm.robotcore.hardware.DigitalChannel;
  * To fully exercise this sample, connect pin 3 of the digin connector to pin 3 of the digout.
  * Note: Pin 1 is indicated by the black stripe, so pin 3 is at the opposite end.
  *
- * The X button on the gamepad will be used to activate the digital output pin.
+ * The X button on the org.ftc17191.ftclayer.gamepad will be used to activate the digital output pin.
  * The Red/Blue LED will be used to indicate the state of the digital input pin.
  * Blue = false (0V), Red = true (5V)
- * If the two pins are linked, the gamepad will change the LED color.
+ * If the two pins are linked, the org.ftc17191.ftclayer.gamepad will change the LED color.
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list

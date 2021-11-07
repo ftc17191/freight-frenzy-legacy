@@ -38,7 +38,7 @@ import com.qualcomm.robotcore.util.Range;
  * This file provides basic Telop driving for a Pushbot robot.
  * The code is structured as an Iterative OpMode
  *
- * This OpMode uses the common Pushbot hardware class to define the devices on the robot.
+ * This OpMode uses the common Pushbot org.ftc17191.ftclayer.hardware class to define the devices on the robot.
  * All device access is managed through the HardwarePushbot class.
  *
  * This particular OpMode executes a basic Tank Drive Teleop for a PushBot
@@ -54,7 +54,7 @@ import com.qualcomm.robotcore.util.Range;
 public class PushbotTeleopTank_Iterative extends OpMode{
 
     /* Declare OpMode members. */
-    HardwarePushbot robot       = new HardwarePushbot(); // use the class created to define a Pushbot's hardware
+    HardwarePushbot robot       = new HardwarePushbot(); // use the class created to define a Pushbot's org.ftc17191.ftclayer.hardware
     double          clawOffset  = 0.0 ;                  // Servo mid position
     final double    CLAW_SPEED  = 0.02 ;                 // sets rate to move servo
 
@@ -63,8 +63,8 @@ public class PushbotTeleopTank_Iterative extends OpMode{
      */
     @Override
     public void init() {
-        /* Initialize the hardware variables.
-         * The init() method of the hardware class does all the work here
+        /* Initialize the org.ftc17191.ftclayer.hardware variables.
+         * The init() method of the org.ftc17191.ftclayer.hardware class does all the work here
          */
         robot.init(hardwareMap);
 
@@ -101,7 +101,7 @@ public class PushbotTeleopTank_Iterative extends OpMode{
         robot.leftDrive.setPower(left);
         robot.rightDrive.setPower(right);
 
-        // Use gamepad left & right Bumpers to open and close the claw
+        // Use org.ftc17191.ftclayer.gamepad left & right Bumpers to open and close the claw
         if (gamepad1.right_bumper)
             clawOffset += CLAW_SPEED;
         else if (gamepad1.left_bumper)
@@ -112,7 +112,7 @@ public class PushbotTeleopTank_Iterative extends OpMode{
         robot.leftClaw.setPosition(robot.MID_SERVO + clawOffset);
         robot.rightClaw.setPosition(robot.MID_SERVO - clawOffset);
 
-        // Use gamepad buttons to move the arm up (Y) and down (A)
+        // Use org.ftc17191.ftclayer.gamepad buttons to move the arm up (Y) and down (A)
         if (gamepad1.y)
             robot.leftArm.setPower(robot.ARM_UP_POWER);
         else if (gamepad1.a)
