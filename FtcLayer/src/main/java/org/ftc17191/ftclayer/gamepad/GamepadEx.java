@@ -221,10 +221,7 @@ public class GamepadEx
                         return gamepad.right_trigger;
                     case LEFT_TRIGGER:
                         return gamepad.left_trigger;
-
                 }
-
-
         }
         return 0;
     }
