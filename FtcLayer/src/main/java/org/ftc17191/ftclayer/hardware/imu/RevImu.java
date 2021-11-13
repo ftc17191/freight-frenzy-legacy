@@ -11,7 +11,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
 public class RevImu {
     BNO055IMU imu;
 
-    private double heading;
+
 
     public RevImu(HardwareMap hmap, String id)
     {
@@ -24,17 +24,15 @@ public class RevImu {
         param.accelUnit = BNO055IMU.AccelUnit.METERS_PERSEC_PERSEC;
         param.calibrationDataFile = "BNO055IMUCalibration.json"; // see the calibration sample opmode
         param.loggingEnabled = true;
-        param.loggingTag = "IMU";
+        param.loggingTag = "FTCLayer IMU";
         param.accelerationIntegrationAlgorithm = new JustLoggingAccelerationIntegrator();
 
         imu.initialize(param);
-
-        heading = 0;
     }
 
     public double getHeading()
     {
-        heading = imu.getAngularOrientation().firstAngle;
-        return heading;
+        return imu.getAngularOrientation().firstAngle;
+
     }
 }

@@ -1,9 +1,18 @@
 package org.ftc17191.utillities;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-public class MotorTester extends OpMode
+@TeleOp(name = "FTC Tester", group = "Iterative Opmode")
+public class FTCTester extends OpMode
 {
+
+    private enum MenuSelection
+    {
+
+    }
+
+    private MenuSelection selection;
 
     @Override
     public void init() {
@@ -20,10 +29,13 @@ public class MotorTester extends OpMode
 
     }
 
+    @Override
     public void stop()
     {
 
     }
+
+    @Override
     public void start()
     {
 
