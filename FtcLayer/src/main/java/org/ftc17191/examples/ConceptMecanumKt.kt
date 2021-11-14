@@ -14,19 +14,19 @@
 package org.ftc17191.examples
 
 import com.qualcomm.robotcore.eventloop.opmode.*
-import org.ftc17191.ftclayer.drivetrain.mechanum.Mechanum
+import org.ftc17191.ftclayer.drivetrain.mecanum.Mecanum
 
 
 
-@TeleOp(name = "Concept Mechanum", group = "Concept")
+@TeleOp(name = "Concept Mecanum", group = "Concept")
 @Disabled // Remove this Line if using as an opmode
-class ConceptMechanumKt : OpMode()
+class ConceptMecanumKt : OpMode()
 {
-    lateinit var train: Mechanum
+    lateinit var train: Mecanum
 
     override fun init()
     {
-        train = Mechanum(hardwareMap,
+        train = Mecanum(hardwareMap,
                 "fr_motor",
                 "fl_motor",
                 "br_motor",

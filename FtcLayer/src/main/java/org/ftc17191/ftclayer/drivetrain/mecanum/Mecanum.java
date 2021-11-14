@@ -1,4 +1,4 @@
-package org.ftc17191.ftclayer.drivetrain.mechanum;
+package org.ftc17191.ftclayer.drivetrain.mecanum;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -9,14 +9,14 @@ import org.ftc17191.ftclayer.hardware.motors.MotorEx;
 
 
 @Disabled
-public class Mechanum
+public class Mecanum
 {
     public MotorEx fr_motor;
     public MotorEx fl_motor;
     public MotorEx br_motor;
     public MotorEx bl_motor;
 
-    public Mechanum(
+    public Mecanum(
             DcMotorEx front_right_motor,
             DcMotorEx front_left_motor,
             DcMotorEx back_right_motor,
@@ -29,7 +29,7 @@ public class Mechanum
         setRunMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
-    public Mechanum(
+    public Mecanum(
             HardwareMap hmap,
             String front_right_motor,
             String front_left_motor,
