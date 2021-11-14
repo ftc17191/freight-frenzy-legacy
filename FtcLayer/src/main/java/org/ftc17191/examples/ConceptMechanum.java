@@ -38,7 +38,7 @@ public class ConceptMechanum extends OpMode
 
     @Override
     public void loop() {
-        train.powerDrive(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
+        train.powerDrive(-gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
 
         telemetry.addLine("Fr Motor Power: " + train.fr_motor.motor.getPower());
         telemetry.addLine("Fl Motor Power: " + train.fl_motor.motor.getPower());
