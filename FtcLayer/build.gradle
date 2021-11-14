@@ -1,4 +1,5 @@
 apply from: '../build.common.gradle'
+apply plugin: 'kotlin-android'
 apply from: '../build.dependencies.gradle'
 
 
@@ -11,6 +12,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation project(':FtcRobotController')
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 
+}
+repositories {
+    mavenCentral()
 }

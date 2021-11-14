@@ -1,7 +1,7 @@
 package org.ftc17191.ftclayer.gamepad;
 
 public class GamepadButtons {
-    enum GamepadDigital
+    public enum GamepadDigital
     {
         A, B, X, Y,  // Buttons
         LEFT_BUMPER, RIGHT_BUMPER, // If bumper pressed
@@ -12,7 +12,7 @@ public class GamepadButtons {
         DPAD_UP, DPAD_DOWN, DPAD_LEFT, DPAD_RIGHT
     }
 
-    enum GamepadAnalog
+    public enum GamepadAnalog
     {
         LEFT_TRIGGER, RIGHT_TRIGGER,
         LEFT_STICK_X, LEFT_STICK_Y,

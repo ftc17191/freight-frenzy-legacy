@@ -11,12 +11,6 @@ public class GamepadEx
 
     Gamepad gamepad = new Gamepad();
 
-
-
-    
-
-
-
     public GamepadEx(GamepadUser user)
     {
         gamepad.setUser(user);
@@ -25,160 +19,80 @@ public class GamepadEx
 
     public boolean isButtonActivated(GamepadButtons.GamepadDigital button)
     {
-        
-        switch (gamepad.getUser()) {
-            case ONE:
-                switch (button) {
-                    case A:
-                        return gamepad.a;
 
 
-                    case B:
-                        return gamepad.b;
+        switch (button) {
+            case A:
+                return gamepad.a;
 
 
-                    case X:
-                        return gamepad.x;
+            case B:
+                return gamepad.b;
 
 
-                    case Y:
-                        return gamepad.y;
+            case X:
+                return gamepad.x;
 
 
-                    case DPAD_UP:
-                        return gamepad.dpad_up;
+            case Y:
+                return gamepad.y;
 
 
-                    case DPAD_DOWN:
-                        return gamepad.dpad_down;
+            case DPAD_UP:
+                return gamepad.dpad_up;
 
 
-                    case DPAD_LEFT:
-                        return gamepad.dpad_left;
+            case DPAD_DOWN:
+                return gamepad.dpad_down;
 
 
-                    case DPAD_RIGHT:
-                        return gamepad.dpad_right;
+            case DPAD_LEFT:
+                return gamepad.dpad_left;
 
 
-                    case LEFT_STICK_BUTTON:
-                        return gamepad.left_stick_button;
+            case DPAD_RIGHT:
+                return gamepad.dpad_right;
 
 
-                    case RIGHT_STICK_BUTTON:
-                        return gamepad.right_stick_button;
+            case LEFT_STICK_BUTTON:
+                return gamepad.left_stick_button;
 
 
-                    case START:
-                        return gamepad.start;
+            case RIGHT_STICK_BUTTON:
+                return gamepad.right_stick_button;
 
 
-                    case BACK:
-                        return gamepad.back;
+            case START:
+                return gamepad.start;
 
 
-                    case LEFT_BUMPER:
-                        return gamepad.left_bumper;
+            case BACK:
+                return gamepad.back;
 
 
-                    case RIGHT_BUMPER:
-                        return gamepad.right_bumper;
+            case LEFT_BUMPER:
+                return gamepad.left_bumper;
 
 
-                    case RIGHT_STICK_ACTIVATED:
-                        return Util.toBoolean(gamepad.right_stick_x)^Util.toBoolean(gamepad.right_stick_y);
+            case RIGHT_BUMPER:
+                return gamepad.right_bumper;
 
 
-                    case LEFT_STICK_ACTIVATED:
-                        return Util.toBoolean(gamepad.left_stick_x)^Util.toBoolean(gamepad.left_stick_y);
+            case RIGHT_STICK_ACTIVATED:
+                return Util.toBoolean(gamepad.right_stick_x)^Util.toBoolean(gamepad.right_stick_y);
 
 
-                    case RIGHT_TRIGGER_ACTIVATED:
-                        return Util.toBoolean(gamepad.right_trigger);
+            case LEFT_STICK_ACTIVATED:
+                return Util.toBoolean(gamepad.left_stick_x)^Util.toBoolean(gamepad.left_stick_y);
 
 
-                    case LEFT_TRIGGER_ACTIVATED:
-                        return Util.toBoolean(gamepad.left_trigger);
+            case RIGHT_TRIGGER_ACTIVATED:
+                return Util.toBoolean(gamepad.right_trigger);
 
 
-                }
+            case LEFT_TRIGGER_ACTIVATED:
+                return Util.toBoolean(gamepad.left_trigger);
 
-
-            case TWO:
-                switch (button) {
-                    case A:
-                        return gamepad.a;
-
-
-                    case B:
-                        return gamepad.b;
-
-
-                    case X:
-                        return gamepad.x;
-
-
-                    case Y:
-                        return gamepad.y;
-
-
-                    case DPAD_UP:
-                        return gamepad.dpad_up;
-
-
-                    case DPAD_DOWN:
-                        return gamepad.dpad_down;
-
-
-                    case DPAD_LEFT:
-                        return gamepad.dpad_left;
-
-
-                    case DPAD_RIGHT:
-                        return gamepad.dpad_right;
-
-
-                    case LEFT_STICK_BUTTON:
-                        return gamepad.left_stick_button;
-
-
-                    case RIGHT_STICK_BUTTON:
-                        return gamepad.right_stick_button;
-
-
-                    case START:
-                        return gamepad.start;
-
-
-                    case BACK:
-                        return gamepad.back;
-
-
-                    case LEFT_BUMPER:
-                        return gamepad.left_bumper;
-
-
-                    case RIGHT_BUMPER:
-                        return gamepad.right_bumper;
-
-
-                    case RIGHT_STICK_ACTIVATED:
-                        return Util.toBoolean(gamepad.right_stick_x)^Util.toBoolean(gamepad.right_stick_y);
-
-
-                    case LEFT_STICK_ACTIVATED:
-                        return Util.toBoolean(gamepad.left_stick_x)^Util.toBoolean(gamepad.left_stick_y);
-
-
-                    case RIGHT_TRIGGER_ACTIVATED:
-                        return Util.toBoolean(gamepad.right_trigger);
-
-
-                    case LEFT_TRIGGER_ACTIVATED:
-                        return Util.toBoolean(gamepad.left_trigger);
-
-
-                }
         }
         return false;
     }

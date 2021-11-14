@@ -11,12 +11,9 @@
 
 
 
-package org.ftc17191.ftclayer.examples;
+package org.ftc17191.examples;
 
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-
+import com.qualcomm.robotcore.eventloop.opmode.*;
 import org.ftc17191.ftclayer.drivetrain.mechanum.Mechanum;
 
 
