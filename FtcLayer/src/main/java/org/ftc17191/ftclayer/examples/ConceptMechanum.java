@@ -11,11 +11,7 @@
 
 
 
-package org.ftc17191.ftclayer.examples; // Delete this line if using as an opmode
-
-// Then remove the double slash at the start of the line below
-// package org.firstinspires.ftc.teamcode;
-
+package org.ftc17191.ftclayer.examples;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
@@ -38,6 +34,7 @@ public class ConceptMechanum extends OpMode
                 "fl_motor",
                 "br_motor",
                 "bl_motor");
+
         telemetry.addLine("Press Start to begin!");
         telemetry.update();
     }
